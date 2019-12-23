@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/purple">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/image"/>
+
+    </RelativeLayout>
+
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="#fff"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:hint="@string/phone_number"
+            android:id="@+id/phoneText"
+            android:inputType="phone"
+            android:layout_height="wrap_content"/>
+
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="#fff"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:id="@+id/codeText"
+            android:hint="write your code here"
+            android:layout_height="wrap_content"/>
+
+
+
+
+        <Button
+            android:id="@+id/continueBtn"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/bg_btn"
+            android:text="Continue"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+    <Button
+        android:id="@+id/authenticateBtn"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/codeText"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/bg_btn"
+        android:text="Authenticate"
+        android:textColor="#fff"
+        android:textSize="20sp">
+    </Button>
+    </LinearLayout>
+
+
+

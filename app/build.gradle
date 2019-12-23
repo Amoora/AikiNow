@@ -60,10 +60,13 @@ dependencies {
     //CardView
     implementation 'androidx.cardview:cardview:1.0.0'
 
-
     // dependency for country code phonenumbers
     implementation 'com.hbb20:ccp:2.1.9'
     implementation 'pub.devrel:easypermissions:0.4.0'
+
+    //glide
+    implementation "com.github.bumptech.glide:glide:4.8.0"
+    annotationProcessor "com.github.bumptech.glide:compiler:4.8.0"
 
     kapt "com.android.databinding:compiler:$gradle_version"
 
